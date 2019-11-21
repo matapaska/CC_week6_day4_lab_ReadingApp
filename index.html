@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
   <body>
+    <div id ="forms-wrapper">
     <form id="new-item-form">
       <div id="form-wrapper">
         <div class="form-item">
@@ -28,11 +29,21 @@
             <option value="Blog Post">Blog Post</option>
           </select>
         </div>
+        <div class="form-item">
+        <input type="submit" value="save"/>
       </div>
-      <input type="submit" value="save"/>
+      </div>
     </form>
+    <form id = "delete-all">
+      <input type="submit" value="delete" >
+    </form>
+  </div>
 
     <h1>Reading List</h1>
-    <ul id="reading-list"></ul>
+    <div id="reading-list-div">
+      <ul id="reading-list">
+        
+      </ul>
+    </div>
   </body>
 </html>

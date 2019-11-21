@@ -1,3 +1,47 @@
 body {
   font-family: Palatino;
 }
+#forms-wrapper{
+  display: flex;
+  justify-content: center;
+
+}
+#new-item-form{
+ display: flex;
+ justify-content: space-around;
+ flex-grow: 4;
+}
+#form-wrapper{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.form-item{
+padding: 1em;
+
+}
+#delete-all{
+  flex-grow: 1;
+}
+#reading-list{
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+li.book{
+  background-color: green;
+      padding: 1em;
+      margin: 1em;
+      list-style: none;
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-basis: 22%;
+      flex-grow: 1;
+      border-radius: 1em;
+      border: darkblue 0.4em solid;
+      flex-shrink: 2;
+}

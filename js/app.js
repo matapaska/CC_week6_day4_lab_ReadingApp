@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript loaded');
   const submit = document.querySelector('#new-item-form');
   submit.addEventListener('submit', handleFormSubmit);
-
+  const deleteButton = document.querySelector('#delete-all');
+  deleteButton.addEventListener('submit', handleElementDelete);
 })
 
 const handleFormSubmit = function (event){
@@ -18,4 +19,11 @@ const handleFormSubmit = function (event){
 
   const list = document.querySelector('#reading-list');
   list.appendChild(outputBook);
+  const submit = document.querySelector('#new-item-form');
+  submit.reset();
+};
+
+const handleElementDelete = function(event){
+  const listDiv = document.querySelector('#reading-list-div')
+  listDiv.removeChild(list);
 }
